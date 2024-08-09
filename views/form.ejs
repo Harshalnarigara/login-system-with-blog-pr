@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            height: 725px;
+            background: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       form{
+            height: 430px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 10px;
+       }
+       h1{
+            font-size: 45px;
+            text-align: center;
+       }
+       label{
+            display: block;
+            padding-left: 53px;
+            font-size: 20px;
+            margin-bottom: 8px;
+       }
+       input{
+            height: 30px;
+            width: 280px;
+            padding-left: 10px;
+            margin-left: 50px;
+            display: block;
+            margin-bottom: 13px;
+       }
+       button{
+            height: 40px;
+            width: 150px;
+            margin-left: 125px;
+            border-radius: 10px;
+            background: red;
+            margin-top: 10px;
+            border: 2px solid white;
+            color: white;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <form action="/insertData" method="post">
+                <h1><font color="red">L</font>ogin</h1>
+                    <label for="">Name :</label>
+                    <input type="text" name="name" id="">         
+                    <label for="">E-mail :</label>
+                    <input type="email" name="email" id="">         
+                    <label for="">Password :</label>
+                    <input type="password" name="password" id="">         
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
